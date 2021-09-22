@@ -41,11 +41,45 @@ if j == 1000:
      df3.drop(df3.index, inplace=True)
      j = 0
 ```
+O endereço será pegue da coluna 'endercom'.
 
+```python
+location = geolocator.geocode(df2.loc[i,'endercom'])
+```
+As coordenadas serão pegues das colunas 'LATITUDE' e 'LONGITUDE'.
+
+```python
+coord = [df1.loc[i,'LATITUDE'],df1.loc[i,'LONGITUDE']]
+```
 
 ## GEOCODER_SIMPLIFICADO.py
 
-Não conta com a interface e a seleção é feita via caminho do arquivo. O endereço pode estar dividido em campos separados. A configuração de geocoder ou reverse deve ser feita no código.
+Não conta com a interface e a seleção é feita via caminho do arquivo.
+
+```python
+base = pds.read_excel(r'CAMINHO DO EXCEL.xlsx')
+```
+
+O endereço pode estar dividido em campos separados.
+
+```python
+logradouro = str(df2.loc[i,'logradouro']) + " " + str(df2.loc[i,'Numero']) + " - " + str(df2.loc[i,'bairro']) + ", Fortaleza, CE"
+cidade = str('Fortaleza')
+estado = str('Ceara')
+cep = str(df2.loc[i,'CepEnderecoPadrao'])
+            
+l = dict(addressLine = str(logradouro),locality = str(cidade),adminDistrict = str(estado))
+```
+
+A configuração de geocoder ou reverse deve ser feita no código. 
+
+```python
+coordenadas = getCoor(base_1)
+```
+ou
+```python
+endereco = getEnde(base_1)
+```
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
