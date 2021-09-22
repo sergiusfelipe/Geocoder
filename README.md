@@ -1,5 +1,5 @@
 # Geocoder
-Geocoders utilizando API Bing via biblioteca GeoPy. Esse código foi escrito de acordo com as necessidades no setor em que trabalhei mas as vantagens se estenderam muito além. Se tornou uma ferramenta que facilitou os diversos trabalhos e várias situações.
+Geocoders utilizando API Bing via biblioteca GeoPy. Esse código foi escrito de acordo com as necessidades no setor em que trabalhei mas as vantagens se estenderam muito além. Se tornou uma ferramenta que facilitou os diversos trabalhos e várias situações. Por exemplo: postes sem endereço nos atributos da viatoria assim impossibilitando o licenciamento, localizações não exatas havendo somente informações de endereço, necessidade de informações de endereço mas só havia coordenadas, etc.
 
 ## GEOCODER.py 
 
@@ -19,6 +19,7 @@ Possui uma interface para o usuário interagir construído utilizando TKinter. P
 
     root.mainloop()
 ```
+![print_geocoder](https://github.com/sergiusfelipe/Imagens/blob/main/Anota%C3%A7%C3%A3o%202021-09-22%201507319.png)
 
 Necessário gerar uma chave na API Rest da Bing e inserir no campo designado. O mesmo vale para o GEOCODER_SIMPLIFICADO.py
 
