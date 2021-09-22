@@ -1,5 +1,5 @@
 # Geocoder
-Geocoders utilizando API Bing via biblioteca GeoPy
+Geocoders utilizando API Bing via biblioteca GeoPy. Esse código foi escrito de acordo com as necessidades no setor em que trabalhei mas as vantagens se estenderam muito além. Se tornou uma ferramenta que facilitou os diversos trabalhos e várias situações.
 
 ## GEOCODER.py 
 
