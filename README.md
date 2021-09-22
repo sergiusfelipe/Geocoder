@@ -3,7 +3,7 @@ Geocoders utilizando API Bing via biblioteca GeoPy. Esse código foi escrito de 
 
 ## GEOCODER.py 
 
-Possui uma interface para o usuário interagir construído utilizando TKinter. Possui duas opções Endereço --> Coordenada e Coordenada --> Endereço. O endereço pode estar en um campo único.
+Possui uma interface para o usuário interagir construído utilizando TKinter. Possui duas opções Endereço --> Coordenada e Coordenada --> Endereço.
 
 ```python
     root= tk.Tk()
